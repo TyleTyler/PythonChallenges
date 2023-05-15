@@ -23,6 +23,8 @@ def guessNumber(x):
         else:
             print(f"Good Job you guessed the number, it was {randomNumber}")
             
+
+
 def computerGuessNum(x):
     low = 0
     high = x
@@ -37,8 +39,8 @@ def computerGuessNum(x):
                 high = number - 1
             else:
                 low = number + 1
-            
-            
+
+
 def RockPaperScissors():
     options = ["rock", "paper", "scissors"]
     print("Let's play a game of Rock, Paper, Scissors shoot, ready?")
@@ -63,7 +65,8 @@ def RockPaperScissors():
         print("It's a tie!")
         return
     print(f"The winner is the {defineWinner(computerChoice,userChoice)}")
-    
+
+
 def hangMan(word):
     word = word.lower()
     usedLetters = []
@@ -85,7 +88,7 @@ def hangMan(word):
         if(guess in usedLetters):
             print("Please enter a letter you haven't already guessed")
             continue
-        if(guess in word):
+        if(guess in word): 
             print("That is in the word")
             usedLetters.append(guess)
             for i in range(len(word)):
